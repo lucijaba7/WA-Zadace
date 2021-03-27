@@ -1,4 +1,3 @@
-(WA-101) Implementirati jednostavni backend web aplikacije koja definira samo tri rute:
-/datum - vraća trenutno datum/vrijeme formatirano u obliku dd.mm.yyyy HH:MM .
-/prognoza - vraća nasumičnu rečenicu u obliku "Danas će biti [sunčano/kišovito/oblačno]"
-/ - vraća kratak opis na kojim se adresama nalaze prve dvije rute
+(WA-103) Konfigurirati public direktorij za isporučivanje statičkih datoteka. 
+- Napraviti mali primjer Vue aplikacije/komponente koja se nalazi u index.html datoteci i koja poziva back-end kod iz
+zadatka 2 (WA-101), te prikazuje real-time datum i prognozu. 
