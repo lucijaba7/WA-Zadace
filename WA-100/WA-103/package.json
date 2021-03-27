@@ -1,0 +1,27 @@
+{
+  "name": "wa-101",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Lucija Babić",
+  "scripts": {
+    "serve": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.3.1",
+    "vuetify-loader": "^1.7.0"
+  },
+  "license": "ISC"
+}
