@@ -15,7 +15,7 @@ let home = (req, res) => {
 }
 
 let datum = (req, res) => {
-    res.send(moment().format('DD.MM.YYYY. h:mm'))
+    res.send(moment().format('DD.MM.YYYY. HH:MM'))
 }
 
 let prognoza = (req, res) => {

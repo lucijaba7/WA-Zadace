@@ -12,8 +12,10 @@
 
 <body>
     <div id="app">
-        <div class="container text-center">
-            {{ message }}
+        <div class="container-fluid">WA-103</div>
+        <div class="container text-center mt-4">
+            <p style="font-size: 30px; font-weight: bold">{{ datum }}</p>
+            <p style="font-size: 35px; border: 4px dotted gray">{{ prognoza }}</p>
         </div>
     </div>
 
@@ -21,10 +23,26 @@
         var app = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Va!'
+                datum: '',
+                prognoza: ''
+            },
+            async mounted() {
+                const datum_res = await fetch('http://localhost:5000/datum');
+                this.datum = await datum_res.text();
+
+                const prognoza_res = await fetch('http://localhost:5000/prognoza');
+                this.prognoza = await prognoza_res.text();
+
             }
         })
     </script>
 </body>
+<style>
+    .container-fluid {
+        padding: 30px;
+        background-color: rgb(202, 236, 225);
+        font-size: 25px;
+    }
+</style>
 
 </html>
